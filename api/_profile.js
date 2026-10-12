@@ -3,7 +3,7 @@
 
 export const PROFILE = `
 NAME: Amarjot Singh (goes by Amar). Based in Mohali, Punjab. Targeting Associate PM / AI PM roles in Gurugram and Delhi NCR; open to relocate.
-CONTACT: sagguamarjot@gmail.com · LinkedIn linkedin.com/in/amarjot-singhh · GitHub github.com/amarjot55 · Portfolio & PRDs on Notion (linked on this site).
+CONTACT: sagguamarjot@gmail.com · WhatsApp/phone +91-9896555685 · resume downloadable on this site (Download resume button) · LinkedIn linkedin.com/in/amarjot-singhh · GitHub github.com/amarjot55 · Portfolio & PRDs on Notion (linked on this site).
 
 SUMMARY: Product-minded builder with 3+ years across full-stack engineering (MERN), performance marketing and CPaaS messaging (SMS, RCS, WhatsApp). Founder of Nirvan. Builds AI product prototypes end to end: problem, PRD, prototype, metrics.
 
@@ -43,7 +43,7 @@ export const FALLBACK = [
   { k: ['trackamar', 'student', 'education', 'school'], a: "TrackAmar gives students, teachers and parents one view of progress, with a Gemini study assistant grounded in each student's scores. No names go to the model and it won't write homework answers." },
   { k: ['nirvan', 'founder', 'wellness'], a: "Nirvan is Amar's live wellness app: 790+ users and 12K+ events on zero ad budget. GA4 showed feature pages bounced under 8% versus ~57% on the landing page, so he's prioritising onboarding that drops users straight into a feature." },
   { k: ['experience', 'work', 'zestin', 'job', 'background'], a: "3+ years: Zestin (growth and CPaaS; 18.7K+ leads, ₹34L+ revenue, ₹54Cr+ portfolio MIS), DLS Hotels (direct bookings +35%), and full-stack MERN engineering at Coding Club India. Plus founder of Nirvan." },
-  { k: ['contact', 'email', 'reach', 'phone', 'linkedin'], a: "Email sagguamarjot@gmail.com or find him on LinkedIn at linkedin.com/in/amarjot-singhh." },
+  { k: ['contact', 'email', 'reach', 'phone', 'linkedin', 'whatsapp', 'resume', 'cv'], a: "Email sagguamarjot@gmail.com, WhatsApp +91-9896555685, or LinkedIn at linkedin.com/in/amarjot-singhh. You can also download his resume from the button at the top of this page." },
   { k: ['location', 'relocate', 'where', 'gurgaon', 'gurugram', 'delhi'], a: "He's in Mohali and targeting Gurugram and Delhi NCR, open to relocate." },
   { k: ['salary', 'ctc', 'notice', 'package'], a: "That's best discussed with Amar directly: sagguamarjot@gmail.com." },
   { k: ['skill', 'stack', 'tech', 'ai'], a: "Product: PRDs, research, RICE, A/B tests, GTM. AI: LLMs, prompt engineering, RAG, agents, evals. Data: funnels, unit economics, SQL, GA4. Build: React, Next.js, Node, TypeScript." },

@@ -163,7 +163,7 @@ export function initScene(canvas) {
   let first = true;
   function tick() {
     if (!running) return;
-    const dt = Math.min(clock.getDelta(), 0.05);
+    const dt = Math.min(clock.getDelta(), 0.25);
     const t = clock.elapsedTime;
     uniforms.uTime.value = reduced ? 0 : t;
 
@@ -175,7 +175,7 @@ export function initScene(canvas) {
     const wide = window.innerWidth > 960;
     const halfW = Math.tan((camera.fov * Math.PI) / 360) * camera.position.z * camera.aspect;
     const baseX = wide ? halfW * 0.5 : 0;
-    const baseY = wide ? 0 : 2.05;
+    const baseY = wide ? 0 : 2.5;
     // Hero: orb on the right. Scrolling: it drifts back and becomes ambient.
     const s = Math.min(scrollP, 1);
     // Past the hero the orb recedes to the edge and dims, unless the assistant is talking.
@@ -187,7 +187,7 @@ export function initScene(canvas) {
     orb.position.x += ((baseX + (edgeX - baseX) * s) - orb.position.x) * k;
     orb.position.y += ((baseY + s * 0.6) - orb.position.y) * k;
     orb.position.z += ((-s * 3.5) - orb.position.z) * k;
-    const scale = (wide ? 0.74 : 0.48) * (1 + energy * 0.12);
+    const scale = (wide ? 0.74 : 0.36) * (1 + energy * 0.12);
     orb.scale.setScalar(first ? scale : orb.scale.x + (scale - orb.scale.x) * Math.min(1, k * 2));
 
     if (!reduced) {

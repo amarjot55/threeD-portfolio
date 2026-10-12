@@ -46,7 +46,7 @@ button { font: inherit; color: inherit; cursor: pointer; }
   background: rgba(10, 11, 18, 0.55); backdrop-filter: blur(16px) saturate(140%);
   transition: background 0.4s var(--ease), border-color 0.4s var(--ease);
 }
-.nav.scrolled { background: rgba(10, 11, 18, 0.85); border-color: rgba(255, 255, 255, 0.12); }
+.nav.scrolled { background: rgba(10, 11, 18, 0.94); border-color: rgba(255, 255, 255, 0.12); }
 .logo { text-decoration: none; display: grid; place-items: center; width: 40px; height: 40px; border-radius: 50%; background: rgba(255,255,255,0.04); border: 1px solid var(--line); }
 .logo span { font: 700 15px var(--display); background: var(--grad); -webkit-background-clip: text; background-clip: text; color: transparent; }
 .nav-links { display: flex; gap: 26px; }
@@ -66,6 +66,13 @@ button { font: inherit; color: inherit; cursor: pointer; }
 .btn-ghost:hover { border-color: rgba(255, 255, 255, 0.25); background: rgba(255, 255, 255, 0.07); }
 .btn-sm { padding: 8px 14px; font-size: 13px; }
 .nav-ai { padding: 9px 16px; font-size: 14px; }
+.nav-actions { display: flex; gap: 8px; }
+.nav-cta { padding: 9px 14px; font-size: 14px; }
+.btn-wa { background: #25d366; color: #062b16; font-weight: 600; box-shadow: 0 10px 40px -14px rgba(37, 211, 102, 0.7); }
+.btn-wa:hover { background: #2ee06f; }
+.wa-fab { position: fixed; right: 22px; bottom: 86px; z-index: 30; width: 50px; height: 50px; border-radius: 50%; display: grid; place-items: center; background: #25d366; color: #fff; box-shadow: 0 14px 36px -10px rgba(37, 211, 102, 0.75); transition: transform 0.35s var(--ease); }
+.wa-fab svg { width: 26px; height: 26px; }
+.wa-fab:hover { transform: translateY(-3px) scale(1.04); }
 .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--cyan); box-shadow: 0 0 12px var(--cyan); animation: pulse 2s infinite; }
 @keyframes pulse { 50% { opacity: 0.35; } }
 
@@ -244,6 +251,9 @@ h2 { font-size: clamp(32px, 4.4vw, 52px); line-height: 1.08; font-weight: 600; }
   .stat { padding: 22px 18px; }
   .section { padding-top: 90px; }
   .fab-label { display: none; }
+  .nav-cta span { display: none; }
+  .nav-cta { padding: 9px 11px; }
+  .wa-fab { right: 16px; bottom: 76px; width: 46px; height: 46px; }
   .ai-fab { padding: 8px; }
   .ai-panel { right: 12px; bottom: 12px; }
 }
