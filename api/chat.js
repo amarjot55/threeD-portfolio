@@ -27,7 +27,7 @@ export default async function handler(req, res) {
 
   const style = mode === 'voice'
     ? 'Reply in plain spoken English, no markdown, no lists, under 55 words.'
-    : 'Reply in under 110 words. Plain text; short bullet lines with "- " are fine.';
+    : 'Reply in under 90 words. Plain text only, no markdown or asterisks; short lines starting with "- " are fine.';
 
   try {
     const r = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/${MODEL}:generateContent`, {
@@ -41,7 +41,14 @@ export default async function handler(req, res) {
     });
     if (!r.ok) throw new Error(`Gemini ${r.status}`);
     const data = await r.json();
-    const reply = data?.candidates?.[0]?.content?.parts?.map((p) => p.text).join('').trim();
+    const raw = data?.candidates?.[0]?.content?.parts?.map((p) => p.text).join('').trim();
+    // Plain text only: strip markdown emphasis/headings the model sometimes adds.
+    const reply = raw
+      ?.replace(/\*\*(.+?)\*\*/g, '$1')
+      .replace(/__(.+?)__/g, '$1')
+      .replace(/^#{1,6}\s*/gm, '')
+      .replace(/^\s*[*•]\s+/gm, '- ')
+      .replace(/\n{3,}/g, '\n\n');
     if (!reply) throw new Error('Empty reply');
     return res.status(200).json({ reply, source: 'ai' });
   } catch (err) {
