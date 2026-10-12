@@ -1,272 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Amarjot Singh - Associate PM / AI PM portfolio: AI products, growth and full-stack builds">
-    <title>Amarjot Singh - Portfolio</title>
-   
-    <link rel="stylesheet" href="src/style-transparent.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Amarjot Singh · AI Product Manager</title>
+  <meta name="description" content="Amarjot Singh — Associate PM / AI PM. Founder of Nirvan, builder of Nexus AI. PRDs, live prototypes and growth results. Talk to my AI assistant." />
+  <meta property="og:title" content="Amarjot Singh · AI Product Manager" />
+  <meta property="og:description" content="AI products, PRDs and live prototypes. Ask my AI assistant anything." />
+  <meta property="og:image" content="/amar.jpg" />
+  <meta name="theme-color" content="#07080d" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%238b5cf6'/%3E%3Cstop offset='1' stop-color='%2322d3ee'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='16' fill='%2307080d'/%3E%3Ctext x='50%25' y='58%25' text-anchor='middle' font-family='Arial' font-weight='700' font-size='28' fill='url(%23g)'%3EAS%3C/text%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
 </head>
 <body>
-    <!-- 3D Background Canvas -->
-    <canvas id="bg" aria-hidden="true"></canvas>
-    
-    <!-- Main Content Container -->
-    <main id="main-content">
-        <!-- Hero Section with Uneven Boxes -->
-        <section id="hero" class="hero-section">
-            <div class="content-wrapper">
-                <div class="left-box">
-                    <h1 class="hero-title">Amarjot Singh</h1>
-                    <h2 class="hero-subtitle">Associate PM · AI Product Manager</h2>
-                    <p class="hero-description">
-                        I turn messy growth problems into AI products people trust:
-                        product strategy, PRDs and LLM prototypes, backed by MERN engineering
-                        and performance-marketing P&amp;L.
-                    </p>
-                    <div class="hero-buttons">
-                        <a href="#projects" class="btn btn-primary">View Work</a>
-                        <a href="#contact" class="btn btn-secondary">Contact</a>
-                    </div>
-                </div>
-                
-                <div class="right-box">
-                    <div class="skills-highlight">
-                        <h3>What I bring</h3>
-                        <ul>
-                            <li>AI product strategy &amp; PRDs</li>
-                            <li>LLM prototypes &amp; evals</li>
-                            <li>Growth &amp; unit economics</li>
-                            <li>React, Node.js &amp; TypeScript</li>
-                        </ul>
-                    </div>
-                    <div class="experience-badge">
-                        <span>3+ Years · Product, Growth, Engineering</span>
-                    </div>
-                </div>
-            </div>
-        </section>
+  <canvas id="bg" aria-hidden="true"></canvas>
+  <div class="grain" aria-hidden="true"></div>
 
-        <!-- About Section with Uneven Layout -->
-        <section id="about" class="about-section">
-            <div class="content-wrapper">
-                <div class="left-content">
-                    <h2 class="section-title">About Me</h2>
-                    <p>
-                        I build products end to end. I founded Nirvan, a live wellness app with 790+ users;
-                        ran lead-gen programs for 9 BFSI, EdTech and travel clients (18.7K+ leads, ~49% margin);
-                        and built Nexus AI, an agentic WhatsApp/RCS/SMS campaign copilot, from problems I hit on the job.
-                    </p>
-                    <p>
-                        Completed B.Tech in Electronics & Communication Engineering,
-                        I combine technical knowledge with practical experience to deliver
-                        high-quality solutions.
-                    </p>
-                </div>
-                
-                <div class="right-content">
-                    <div class="stats-box">
-                        <div class="stat-item">
-                            <span class="stat-number">18.7K+</span>
-                            <span class="stat-label">Leads Delivered</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-number">790+</span>
-                            <span class="stat-label">Nirvan Users</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-number">3</span>
-                            <span class="stat-label">AI Products Built</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+  <header class="nav" id="nav">
+    <a href="#top" class="logo" aria-label="Home"><span>AS</span></a>
+    <nav class="nav-links" aria-label="Sections">
+      <a href="#work">Work</a>
+      <a href="#approach">Approach</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="btn btn-ghost nav-ai" data-open-ai="chat"><span class="dot"></span>Ask my AI</button>
+  </header>
 
-        <!-- Experience Section -->
-        <section id="experience" class="experience-section">
-            <div class="content-wrapper">
-                <div class="left-column">
-                    <h2 class="section-title">Work Experience</h2>
-                    <div class="job-card">
-                        <h3>Performance Marketing Executive · Innovation PM</h3>
-                        <h4>Zestin Solution Pvt. Ltd., Mohali</h4>
-                        <span class="date">Nov 2025 - Sep 2026</span>
-                        <ul>
-                            <li>Ran acquisition for 9 client programs: 18.7K+ leads, ₹34L+ revenue at ~49% gross margin.</li>
-                            <li>Cut cost per lead 45–61% below client targets across SMS, RCS and Meta.</li>
-                            <li>Pitched an AI omnichannel campaign copilot that the company built into AIcon.</li>
-                        </ul>
-                    </div>
-                    <div class="job-card">
-                        <h3>Founder &amp; Product Lead</h3>
-                        <h4>Nirvan (mynirvan.com)</h4>
-                        <span class="date">Jan 2026 - Present</span>
-                        <ul>
-                            <li>Launched an emotional-wellness app; 790+ users and 12K+ events on zero ad budget.</li>
-                        </ul>
-                    </div>
-                </div>
-                
-                <div class="right-column">
-                    <div class="job-card">
-                        <h3>Digital Marketing Executive</h3>
-                        <h4>DLS Hotels, Karnal</h4>
-                        <span class="date">Oct 2024 - Nov 2025</span>
-                        <ul>
-                            <li>Grew direct bookings 35%; lifted site conversion from 2.1% to 4.3%.</li>
-                        </ul>
-                    </div>
-                    <div class="job-card">
-                        <h3>Full Stack Engineer (MERN)</h3>
-                        <h4>Coding Club India</h4>
-                        <span class="date">Apr 2023 - Sep 2024</span>
-                        <ul>
-                            <li>Shipped React/Next.js features and Node APIs; +10% conversion, +30% engagement.</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow reveal">Associate PM · AI Product Manager · Gurugram / Delhi NCR</p>
+        <h1 class="reveal">I turn messy growth problems into <span class="grad">AI products</span> people trust.</h1>
+        <p class="lede reveal">Founder of Nirvan. Builder of Nexus AI. Three years across MERN engineering, performance marketing and CPaaS, so I can write the PRD, ship the prototype and own the metric.</p>
+        <div class="cta reveal">
+          <a href="#work" class="btn btn-primary">See my work</a>
+          <button class="btn btn-ghost" data-open-ai="voice">
+            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M12 15a3 3 0 0 0 3-3V6a3 3 0 1 0-6 0v6a3 3 0 0 0 3 3Zm5-3a5 5 0 0 1-10 0H5a7 7 0 0 0 6 6.92V21h2v-2.08A7 7 0 0 0 19 12h-2Z"/></svg>
+            Talk to my AI
+          </button>
+        </div>
+      </div>
+      <a href="#proof" class="scroll-cue" aria-label="Scroll"><span></span></a>
+    </section>
 
-        <!-- Projects Section -->
-        <section id="projects" class="projects-section">
-            <div class="content-wrapper">
-<div class="project-card">
-    <h2 class="section-title">Featured Projects</h2>
-</div>
-                <div class="projects-grid">
-                    <div class="project-card">
-                        <h3>Nexus AI · Agentic Campaign Copilot</h3>
-                        <p>One brief in, a compliant WhatsApp/RCS/SMS campaign out: intent parsing, consent and DND filtering, channel routing, DLT copy checks and TRAI send-time guard.</p>
-                        <div class="tech-tags"><span>AI PM</span><span>React</span><span>TypeScript</span></div>
-                        <a href="https://nexus-ai-campaigns.vercel.app" target="_blank" rel="noopener" class="project-link">Live Demo →</a>
-                        <a href="https://www.notion.so/3f72123d4b0b81ef9bd3e7458099838b" target="_blank" rel="noopener" class="project-link">PRD →</a>
-                    </div>
-                    <div class="project-card">
-                        <h3>TrackAmar · AI Student Performance</h3>
-                        <p>Student, teacher and parent dashboards with a Gemini study assistant grounded in each student's scores, plus streaks and reward goals.</p>
-                        <div class="tech-tags"><span>Next.js</span><span>Gemini</span><span>PWA</span></div>
-                        <a href="https://www.notion.so/3f72123d4b0b811d9efbc8998021e620" target="_blank" rel="noopener" class="project-link">PRD →</a>
-                    </div>
-                    <div class="project-card">
-                        <h3>Nirvan · Wellness Companion</h3>
-                        <p>Founder-built wellness app: mood tracker, breathing, sleep stories and community; 790+ users.</p>
-                        <div class="tech-tags"><span>Founder</span><span>GA4</span><span>Growth</span></div>
-                        <a href="https://mynirvan.com" target="_blank" rel="noopener" class="project-link">Visit →</a>
-                    </div>
-                    <div class="project-card">
-                        <h3>E-Commerce Web Application</h3>
-                        <p>Full-featured online shopping platform with product catalog, shopping cart, user authentication, and payment integration.</p>
-                        <div class="tech-tags">
-                            <span>React.js</span>
-                            <span>Node.js</span>
-                            <span>MongoDB</span>
-                            <span>Stripe API</span>
-                        </div>
-                        <a href="https://ecommerce-netlify.netlify.app/" target="_blank" rel="noopener" class="project-link">View Project →</a>
-                    </div>
-                    <div class="project-card">
-                        <h3>Real-Time Language Translator App</h3>
-                        <p>It instantly translates text or speech between languages, offering a seamless and efficient communication experience.</p>
-                        <div class="tech-tags">
-                            <span>React.js</span>
-                            <span>Translation API</span>
-                            <span>Real-time</span>
-                        </div>
-                        <a href="https://teal-cocada-cc3967.netlify.app/" target="_blank" rel="noopener" class="project-link">View Project →</a>
-                    </div>
-                    
-                    <div class="project-card">
-                        <h3>Employee Management System</h3>
-                        <p>React-based application with admin dashboards and full CRUD operations.</p>
-                        <div class="tech-tags">
-                            <span>React.js</span>
-                            <span>Node.js</span>
-                            <span>MongoDB</span>
-                        </div>
-                        <a href="https://react-base-ems.netlify.app/" target="_blank" rel="noopener" class="project-link">View Project →</a>
-                    </div>
-                    
-                    <div class="project-card">
-                        <h3>User Enquiry CRUD App</h3>
-                        <p>MERN stack application for managing user enquiries with complete functionality.</p>
-                        <div class="tech-tags">
-                            <span>MERN</span>
-                            <span>REST API</span>
-                            <span>CRUD</span>
-                        </div>
-                    </div>
-                    
-                    <div class="project-card">
-                        <h3>Weather App</h3>
-                        <p>Real-time weather application with global location support and intuitive UI.</p>
-                        <div class="tech-tags">
-                            <span>API</span>
-                            <span>React.js</span>
-                            <span>Weather Data</span>
-                        </div>
-                        <a href="https://6628e1f710da0e0cdf3cc775--gleaming-pie-4e87f0.netlify.app/" target="_blank" rel="noopener" class="project-link">View Project →</a>
-                    </div>
-                </div>
-            </div>
-        </section>
+    <!-- PROOF -->
+    <section class="proof" id="proof">
+      <div class="stat reveal"><b data-count="18.7" data-suffix="K+">18.7K+</b><span>leads across 9 client programs</span></div>
+      <div class="stat reveal"><b data-count="49" data-prefix="~" data-suffix="%">~49%</b><span>gross margin on ₹34L+ revenue</span></div>
+      <div class="stat reveal"><b data-count="790" data-suffix="+">790+</b><span>users on Nirvan, zero ad spend</span></div>
+      <div class="stat reveal"><b data-count="54" data-prefix="₹" data-suffix="Cr+">₹54Cr+</b><span>CPaaS portfolio in the MIS I built</span></div>
+    </section>
 
-        <!-- Extracurricular Section -->
-        <section id="extracurricular" class="projects-section">
-            <div class="content-wrapper">
-<div class="project-card">
-    <h2 class="section-title">Extracurricular</h2>
-</div>
-                <div class="projects-grid">
-                    <div class="project-card">
-                        <h3>Power of accepting and letting go</h3>
-                        <p>A guide to awakening your true self - Published book exploring personal growth and self-discovery through acceptance and mindfulness practices.</p>
-                        <div class="tech-tags">
-                            <span>Author</span>
-                            <span>Self-Help</span>
-                            <span>Mindfulness</span>
-                        </div>
-                        <a href="https://amzn.in/d/8capZ3y" target="_blank" rel="noopener" class="project-link">View on Amazon →</a>
-                    </div>
-                    
-                    <div class="project-card">
-                        <h3>Bomic</h3>
-                        <p>Building a social media platform for kids, combining fantasy worlds, superpowers, and interactive universes, with gamified features and AI-driven storytelling.</p>
-                        <div class="tech-tags">
-                            <span>Social Media</span>
-                            <span>Gamification</span>
-                            <span>AI Storytelling</span>
-                            <span>In Progress</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+    <!-- WORK -->
+    <section class="section" id="work">
+      <div class="section-head reveal">
+        <p class="eyebrow">Selected work</p>
+        <h2>Products I've shaped and shipped</h2>
+      </div>
 
-        <!-- Contact Section -->
-        <section id="contact" class="contact-section">
-            <div class="content-wrapper">
-                <div class="left-contact">
-                    <h2 class="section-title">Get In Touch</h2>
-                    <p>Ready to work together on your next project?</p>
-                    <div class="contact-info">
-                        <a href="mailto:sagguamarjot@gmail.com">sagguamarjot@gmail.com</a>
-                        <a href="tel:+919896555685">+91 9896555685</a>
-                    </div>
-                </div>
-                
-                <div class="right-contact">
-                    <div class="social-links">
-                        <a href="https://github.com/amarjot55" target="_blank" rel="noopener">GitHub</a>
-                        <a href="https://linkedin.com/in/amarjot-singhh" target="_blank" rel="noopener">LinkedIn</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
+      <article class="case case-lg reveal tilt">
+        <div class="case-meta"><span class="pill">AI · B2B SaaS</span><span class="pill pill-muted">Prototype</span></div>
+        <h3>Nexus AI <em>Agentic omnichannel campaign copilot</em></h3>
+        <blockquote>“Launch an RCS + SMS win-back for Tier 2 users inactive for 60 days with 20% off at 10 PM.”</blockquote>
+        <div class="case-grid">
+          <div><h4>Problem</h4><p>Marketers rebuilt every campaign in three channel consoles and checked DND, consent and TRAI windows by hand.</p></div>
+          <div><h4>Decision</h4><p>LLM proposes, rules decide: compliance is hard-coded, and nothing sends without the marketer's approval.</p></div>
+          <div><h4>Outcome</h4><p>One sentence in, a compliant WhatsApp → RCS → SMS plan out. I pitched it at Zestin; it became AIcon.</p></div>
+        </div>
+        <div class="links"><a href="https://nexus-ai-campaigns.vercel.app" target="_blank" rel="noopener">Live demo ↗</a><a href="https://www.notion.so/3f72123d4b0b81ef9bd3e7458099838b" target="_blank" rel="noopener">PRD ↗</a><a href="https://github.com/amarjot55/nexus-ai-campaigns" target="_blank" rel="noopener">Code ↗</a></div>
+      </article>
 
-    <script type="module" src="/src/main-netlify-fixed.js"></script>
+      <article class="case case-lg reveal tilt">
+        <div class="case-meta"><span class="pill">AI · EdTech</span><span class="pill pill-muted">Prototype</span></div>
+        <h3>TrackAmar <em>AI student performance platform</em></h3>
+        <div class="case-grid">
+          <div><h4>Problem</h4><p>Students, teachers and parents each see a different slice of progress, and help arrives after the report card.</p></div>
+          <div><h4>Decision</h4><p>A Gemini study buddy grounded in each student's own scores. No names sent to the model; no homework answers.</p></div>
+          <div><h4>Outcome</h4><p>One shared view for three roles, with remarks, tests, rewards and AI study plans that flow between them.</p></div>
+        </div>
+        <div class="links"><a href="https://trackamar.vercel.app" target="_blank" rel="noopener">Live demo ↗</a><a href="https://www.notion.so/3f72123d4b0b811d9efbc8998021e620" target="_blank" rel="noopener">PRD ↗</a><a href="https://github.com/amarjot55/trackamar" target="_blank" rel="noopener">Code ↗</a></div>
+      </article>
+
+      <div class="cards">
+        <article class="case reveal tilt">
+          <div class="case-meta"><span class="pill pill-warm">Founder · Live</span></div>
+          <h3>Nirvan</h3>
+          <p>Emotional-wellness companion with mood tracking, breathing and sleep stories. 790+ users and 12K+ events on zero budget. Feature pages bounce under 8% vs ~57% on landing, so onboarding now drops people straight into a feature.</p>
+          <div class="links"><a href="https://mynirvan.com" target="_blank" rel="noopener">mynirvan.com ↗</a></div>
+        </article>
+        <article class="case reveal tilt">
+          <div class="case-meta"><span class="pill">Marketplace</span><span class="pill pill-muted">Prototype</span></div>
+          <h3>Glow-Hub</h3>
+          <p>At-home beauty marketplace: request-then-confirm booking with fees up front, provider dashboard, chat and verified reviews.</p>
+          <div class="links"><a href="https://glowhub-services.vercel.app" target="_blank" rel="noopener">Live ↗</a><a href="https://www.notion.so/3f72123d4b0b817cac72cdb6d1ae093d" target="_blank" rel="noopener">PRD ↗</a></div>
+        </article>
+        <article class="case reveal tilt">
+          <div class="case-meta"><span class="pill">E-commerce</span><span class="pill pill-muted">Prototype</span></div>
+          <h3>Decor-Nest</h3>
+          <p>Décor store that puts free measurement and installation inside checkout to cut size-related returns.</p>
+          <div class="links"><a href="https://decornest.vercel.app" target="_blank" rel="noopener">Live ↗</a><a href="https://www.notion.so/3f72123d4b0b8113bf51fa9e6207cabd" target="_blank" rel="noopener">PRD ↗</a></div>
+        </article>
+      </div>
+    </section>
+
+    <!-- APPROACH -->
+    <section class="section" id="approach">
+      <div class="section-head reveal">
+        <p class="eyebrow">How I work</p>
+        <h2>Four habits behind every product</h2>
+      </div>
+      <ol class="habits">
+        <li class="reveal"><span>01</span><h3>Start from the money</h3><p>Every idea gets a unit-economics line before a wireframe: CPL, margin, CAC, payback.</p></li>
+        <li class="reveal"><span>02</span><h3>Guardrails before features</h3><p>For AI, I set eval bars first: field precision, invented-filter rate, refusal cases.</p></li>
+        <li class="reveal"><span>03</span><h3>Prototype to learn</h3><p>A clickable build in days beats a deck. I ship it, watch it break, then write the PRD.</p></li>
+        <li class="reveal"><span>04</span><h3>One metric that matters</h3><p>A north star plus two guardrails per product, tracked in GA4 or a simple MIS.</p></li>
+      </ol>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="section" id="experience">
+      <div class="section-head reveal">
+        <p class="eyebrow">Experience</p>
+        <h2>Engineering, growth, then product</h2>
+      </div>
+      <div class="about reveal">
+        <picture><source srcset="/amar.webp" type="image/webp" /><img src="/amar.jpg" alt="Amarjot Singh" width="640" height="800" loading="lazy" /></picture>
+        <ul class="timeline">
+          <li><time>Jan 2026 — now</time><h3>Founder &amp; Product Lead · Nirvan</h3><p>Idea to live app; roadmap, research, build, growth. 790+ users, 11% returning.</p></li>
+          <li><time>Nov 2025 — Sep 2026</time><h3>Performance Marketing (Growth &amp; CPaaS) · Zestin</h3><p>9 client programs, CPL 45–61% under target, ₹54Cr+ portfolio MIS, WhatsApp volume 6.7x. Pitched the copilot that became AIcon.</p></li>
+          <li><time>Oct 2024 — Nov 2025</time><h3>Digital Marketing · DLS Hotels</h3><p>Direct bookings +35%, site conversion 2.1% → 4.3%, 4.2x ROAS.</p></li>
+          <li><time>Apr 2023 — Sep 2024</time><h3>Full Stack Engineer (MERN) · Coding Club India</h3><p>React/Next.js and Node APIs; +10% conversion, ~30% faster loads.</p></li>
+        </ul>
+      </div>
+      <div class="chips reveal">
+        <span>PRDs</span><span>RICE &amp; MoSCoW</span><span>A/B testing</span><span>GTM</span><span>Unit economics</span><span>SQL · GA4</span><span>LLMs · RAG · Agents</span><span>AI evals</span><span>React · Next.js · Node</span><span>Figma</span>
+      </div>
+      <p class="certs reveal">Certified: IBM AI Product Manager · Microsoft AI Product Manager · Google Cloud Generative AI Leader · B.Tech ECE, Kurukshetra University · Author of <a href="https://amzn.in/d/8capZ3y" target="_blank" rel="noopener"><i>The Power of Accepting</i></a></p>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section contact" id="contact">
+      <p class="eyebrow reveal">Contact</p>
+      <h2 class="reveal">Hiring an APM or AI PM?<br /><span class="grad">Let's talk.</span></h2>
+      <div class="cta reveal">
+        <a class="btn btn-primary" href="mailto:sagguamarjot@gmail.com">sagguamarjot@gmail.com</a>
+        <a class="btn btn-ghost" href="https://www.linkedin.com/in/amarjot-singhh" target="_blank" rel="noopener">LinkedIn ↗</a>
+        <a class="btn btn-ghost" href="https://www.notion.so/3f72123d4b0b81438803cca66e9636eb" target="_blank" rel="noopener">Portfolio &amp; PRDs ↗</a>
+        <a class="btn btn-ghost" href="https://github.com/amarjot55" target="_blank" rel="noopener">GitHub ↗</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">© 2026 Amarjot Singh · Built with Three.js · Prototypes shown use demo data</footer>
+
+  <!-- AI ASSISTANT -->
+  <button class="ai-fab" data-open-ai="chat" aria-label="Open AI assistant"><span class="fab-orb"></span><span class="fab-label">Ask my AI</span></button>
+  <section class="ai-panel" id="ai-panel" role="dialog" aria-modal="false" aria-labelledby="ai-title" hidden>
+    <header class="ai-head">
+      <div><h2 id="ai-title">Amar's AI</h2><p>Ask about my work, skills or fit for your team</p></div>
+      <div class="ai-tabs" role="tablist">
+        <button role="tab" data-tab="chat" aria-selected="true">Chat</button>
+        <button role="tab" data-tab="voice" aria-selected="false">Voice</button>
+      </div>
+      <button class="ai-close" aria-label="Close assistant">✕</button>
+    </header>
+
+    <div class="ai-body" data-pane="chat">
+      <div class="ai-messages" id="ai-messages" aria-live="polite"></div>
+      <div class="ai-suggest" id="ai-suggest">
+        <button>Why should we hire Amar?</button>
+        <button>Tell me about Nexus AI</button>
+        <button>What's his PM experience?</button>
+        <button>How do I contact him?</button>
+      </div>
+      <form class="ai-input" id="ai-form">
+        <input id="ai-text" autocomplete="off" maxlength="500" placeholder="Ask anything about Amar…" aria-label="Message" />
+        <button type="button" class="ai-mic" id="ai-mic" aria-label="Speak your question"><svg viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M12 15a3 3 0 0 0 3-3V6a3 3 0 1 0-6 0v6a3 3 0 0 0 3 3Zm5-3a5 5 0 0 1-10 0H5a7 7 0 0 0 6 6.92V21h2v-2.08A7 7 0 0 0 19 12h-2Z"/></svg></button>
+        <button type="submit" class="ai-send" aria-label="Send"><svg viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M3 20.5 21 12 3 3.5 3 10l12 2-12 2z"/></svg></button>
+      </form>
+    </div>
+
+    <div class="ai-body ai-voice" data-pane="voice" hidden>
+      <div class="voice-orb" id="voice-orb"><i></i><i></i><i></i></div>
+      <p class="voice-state" id="voice-state">Tap the orb and ask your question</p>
+      <p class="voice-transcript" id="voice-transcript"></p>
+      <div class="voice-actions">
+        <label class="toggle"><input type="checkbox" id="voice-continuous" checked /> Hands-free conversation</label>
+        <button class="btn btn-ghost btn-sm" id="voice-stop">Stop</button>
+      </div>
+    </div>
+  </section>
+
+  <script type="module" src="/src/main.js"></script>
 </body>
 </html>
